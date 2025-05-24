@@ -1,0 +1,59 @@
+# Python virtual environments
+tfjs_convert/
+venv/
+env/
+.env
+.venv
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Large ML libraries and dependencies
+*.dylib
+*.dll
+*.so.*
+libtensorflow*
+libtorch*
+
+# Model files (if very large - keep smaller ones)
+*.pth
+*.h5
+*.pb
+*.onnx
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Node modules (from React app)
+node_modules/
+.npm
+
+# Build outputs
+build/
+dist/
+
+# Temporary files
+*.tmp
+*.temp 

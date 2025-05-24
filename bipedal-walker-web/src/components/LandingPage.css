@@ -1,0 +1,123 @@
+.landing-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 50%, #1a1a1a 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 4rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #4CAF50, #2196F3, #FF9800);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.cta-button:hover {
+  background: linear-gradient(45deg, #45a049, #4CAF50);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.prompts-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.prompts-section h3 {
+  margin-bottom: 1.5rem;
+  color: #ddd;
+  font-size: 1.5rem;
+}
+
+.prompts-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+}
+
+.prompt-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  font-style: italic;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.prompt-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(76, 175, 80, 0.5);
+  transform: translateY(-3px);
+}
+
+.info-section {
+  max-width: 600px;
+  text-align: center;
+  color: #999;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.credit-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.credit-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.credit-text a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.credit-text a:hover {
+  color: #45a049;
+} 
